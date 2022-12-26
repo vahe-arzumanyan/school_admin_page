@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import './style.scss'
-import {toDoActions} from "../../../store/school-reducer/to-do/type";
+// import {toDoActions} from "../../../store/school-reducer/type-reducer/type";
 
 
 

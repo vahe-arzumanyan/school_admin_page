@@ -1,22 +1,22 @@
-import {toDoActions} from "./type";
+import {toDoActions} from '../type-reducer/type';
 
 const initialState = {
-  userList: []
+  schoolList: []
 }
 
-const TodoListReducer = (state = initialState, action) => {
+const School = (state = initialState, action) => {
   switch (action.type) {
-    case toDoActions.CREATE_TO_DO: {
+    case toDoActions.CREATE_LIST: {
 
-      return {...state, userList: [...state.userList, action.payload]}
+      return {...state, schoolList: [...state.userList, action.payload]}
     }
     case toDoActions.REMOVE_LIST: {
-      return {...state, userList: state.userList.filter((item, i) => i !== action.payload)}
+      return {...state, schoolList: state.schoolList.filter((item, i) => i !== action.payload)}
     }
     case toDoActions.EDIT_LIST: {
 
       console.log(action.payload)
-      const newList = state.userList.map((item, i) => {
+      const newList = state.schoolList.map((item, i) => {
         if (action.payload.index === i) {
           item = action.payload.userEdit
         }
@@ -25,7 +25,7 @@ const TodoListReducer = (state = initialState, action) => {
 
 
       return {
-        ...state, userList: newList
+        ...state, schoolList: newList
       }
     }
 
@@ -38,7 +38,7 @@ const TodoListReducer = (state = initialState, action) => {
 
 }
 
-export default TodoListReducer;
+export default School;
 
 // export const removeList = (index)=>{
 //     return{type:toDoActions.REMOVE_LIST, payload:index}

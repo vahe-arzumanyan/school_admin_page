@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {toDoActions} from '../../store/school-reducer/to-do/type';
+import {toDoActions} from '../../store/type-reducer/type';
 import './style.scss';
 import UsersListUi from "./UsersListUI";
 
@@ -25,7 +25,7 @@ const AddUsersList = () => {
 
 
   const handleClick = () => {
-    dispatch({type: toDoActions.CREATE_TO_DO, payload: userInfo})
+    dispatch({type: toDoActions.CREATE_LIST, payload: userInfo})
     setUserInfo({
       ...userInfo,
       firstName: '',
@@ -110,15 +110,3 @@ const AddUsersList = () => {
 export default AddUsersList;
 
 
-// {
-//     schoolName: '',             //modal
-//         address: '',                //modal
-//     directorName: '',           //modal
-//     directorPhoneNumber: '',    //modal
-//     directorEmailAddress: '',   //modal,
-//     teachersMaxCount:0,         //modal
-//     childrenMaxCount:0,         //modal
-//     teachersList: [],
-//     childrenList: [],
-//     fond: 0,
-// }

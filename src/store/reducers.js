@@ -1,8 +1,13 @@
 import {combineReducers} from "redux";
-import TodoListReducer from './school-reducer/to-do/to-do-list-reducer'
+import School from "../pages/school";
+import Teacher from "./teacher-reducer";
+import Pupil from "../pages/pupils";
+
 
         const rootReducer = combineReducers({
-            TodoListReducer
+            School,
+            Teacher,
+            Pupil,
         })
 
 export default rootReducer;
