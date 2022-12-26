@@ -1,0 +1,48 @@
+.P-add-users{
+margin:30px;
+}
+
+.P-add-users input {
+  width: 300px;
+  height: 30px;
+  border: 1px solid #449fdb;
+}
+
+.P-gender-option {
+  width: 300px;
+  height: 30px;
+  border: 1px solid #449fdb;
+}
+
+.P-add-users label{
+  margin:10px 0;
+}
+
+.P-add-users p{
+  font-size: 16px;
+  font-family: monospace;
+  color: #449fdb;
+}
+
+.P-add-users button{
+  width: 300px;
+  height: 30px;
+  color: #449fdb;
+  background: transparent;
+  border: 1px solid #449fdb;
+  padding: 3px 5px;
+  text-align: center;
+  
+  &:hover{
+    border: 2px solid #114d68;
+    color:#114d68;
+  }
+}
+
+.P-btn-users button{
+  margin: 5px 0;
+}
+
+.P-hhh{
+  margin:600px 100px 0 0;
+}
