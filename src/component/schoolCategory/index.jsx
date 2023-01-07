@@ -4,7 +4,7 @@ import {NavLink} from 'react-router-dom';
 
 
 const SchoolCategory = () => {
-    return <div className={'P-school-action-title G-flex G-flex-column G-align-center'}>
+    return <div className='P-school-action-title G-flex G-flex-column G-align-center'>
         <div className='P-admin-action-title G-flex G-center'>
             <p>Administration Action</p>
         </div>

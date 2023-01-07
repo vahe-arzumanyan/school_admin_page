@@ -1,6 +1,5 @@
 import React from "react";
 import './App.scss';
-
 import Home from "./component/Home";
 import SchoolCategory from './component/schoolCategory/index'
 
@@ -9,13 +8,22 @@ import SchoolCategory from './component/schoolCategory/index'
 
 
 const App = () => {
-  return <div className='G-flex'>
+    return <div className='G-flex'>
 
-    <SchoolCategory/>
-    <div className='G-flex G-flex-column'>
-      <Home/>
+        <SchoolCategory/>
+        <div className='G-flex G-flex-column hh'>
+            <Home/>
+<div className='box'>as</div>
+<div className='box'>as</div>
+<div className='box'>as</div>
+<div className='box'>as</div>
+<div className='box'>as</div>
+<div className='box'>as</div>
+<div className='box'>as</div>
+<div className='box'>as</div>
+
+        </div>
     </div>
-  </div>
 }
 
 export default App;
