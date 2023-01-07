@@ -5,7 +5,7 @@ import './style.scss';
 import UsersListUi from "./UsersListUI";
 
 
-const AddUsersList = () => {
+const AddSchools = () => {
   const [editUserInfo, setEditUserInfo] = useState(null);
   const [userInfo, setUserInfo] = useState(
     {
@@ -107,6 +107,6 @@ const AddUsersList = () => {
   </div>
 }
 
-export default AddUsersList;
+export default AddSchools;
 
 

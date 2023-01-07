@@ -15,7 +15,7 @@ const Home = () => {
                 <Route path={"/School"} element={<School/>} />
                 <Route path={"/Teachers"} element={<Teacher/>} />
                 <Route path={"/Pupil"} element={<Pupil/>} />
-                {/*<Route path= {'/Home'} element={<School/>}/>*/}
+                <Route path= {'/Home'} element={<School/>}/>
             </Routes>
 
     </div>

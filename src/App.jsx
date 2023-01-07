@@ -9,10 +9,12 @@ import SchoolCategory from './component/schoolCategory/index'
 
 
 const App = () => {
-  return <div className={'G-flex'}>
-    <SchoolCategory />
-    <Home />
+  return <div className='G-flex'>
 
+    <SchoolCategory/>
+    <div className='G-flex G-flex-column'>
+      <Home/>
+    </div>
   </div>
 }
 

@@ -1,13 +1,14 @@
-import React, {useState} from "react";
+import React from "react";
 import './style.scss'
-import AddUsersList from "../addUsersList";
+import AddSchools from "../addUsersList";
 
 
 
 const School = () =>{
     // const [modalSchool, setModalSchool] = useState(false)
-    return <div>
-  <AddUsersList/>
+    return <div className={'P-school-bgColor'}>
+  <AddSchools/>
+
     </div>
 }
 

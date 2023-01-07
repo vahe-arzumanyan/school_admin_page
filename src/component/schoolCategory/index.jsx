@@ -11,13 +11,13 @@ const SchoolCategory = () => {
 
         <ul className='P-category-ul'>
             <li>
-                <NavLink to={'/School'}><a>Schools</a></NavLink>
+                <NavLink to={'/School'}>Schools</NavLink>
             </li>
             <li>
-                <NavLink to={'/Teacher'}><a>Teachers</a></NavLink>
+                <NavLink to={'/Teacher'}>Teachers</NavLink>
             </li>
             <li>
-                <NavLink to={'/Pupil'}><a>Pupils</a></NavLink>
+                <NavLink to={'/Pupil'}>Pupils</NavLink>
             </li>
         </ul>
 
